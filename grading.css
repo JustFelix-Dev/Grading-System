@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./pexels-lukas-590041.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#center {
+    background-color:brown;
+    height: 40%;
+    width: 50%;
+    position: relative;
+    left: 23%;
+    margin-top: 8rem;
+    border: 3px solid black;
+    border-radius: 30px;
+  
+}
+.main input{
+    margin-top: 90px;
+    margin-left: 200px;
+    padding: 10px;
+    width: 350px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+input:hover{
+    background-color: rgb(221, 221, 172);
+    caret-color: red;
+}
+button {
+    background-color: orangered;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 300px;
+   
+}
+button:hover {
+    background-color: orangered;
+    transition: 0.3s linear;
+    transform: scale(0.97);
+    box-shadow:  0 0 9px #000, 0 0 14px #000;
+    cursor: grab;
+}
+
+#disp {
+    text-align: center;
+    line-height: 80px;
+    padding: 15px;
+    border: 1px solid black;
+    height: 100px;
+    width: 300px;
+    margin-block: 1rem;
+    margin-left: 30%;
+    box-shadow: 0 0 9px #000, 0 0 14px #000;
+}
+.image {
+    position: absolute;
+    top: -50px;
+    left: 300px;
+    border-radius: 50%;
+    background-color: #000;
+}

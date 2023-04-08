@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading System</title>
+    <script src="https://kit.fontawesome.com/b1c5b9dbea.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="grading.css">
+</head>
+<body>
+    <marquee truespeed="10ms" behavior="alternate" direction="right">
+       <h2> GRADING SYSTEM <i class="fa-solid fa-calculator"></i>!</h2>
+    </marquee>
+    <!-- Input -->
+    
+    <div id="center">
+        <img src="./charts.jpg" width="110px" ; height="110px" class="image" alt="">
+        <div class="main">
+            <input type="text" id="num"><br><br>
+            <button onclick="grade()"> Check your Grade</button>
+        </div>
+ <br>
+ <hr>
+ <!-- Output Display -->
+ <div >
+    <h1 id="disp">
+    </h1>
+ </div>
+    </div>
+    <script>
+        function grade () {
+            if(num.value == ""){
+        disp.innerHTML= "INVALID"
+         }else if( num.value>=0 && num.value<=39){
+          disp.innerHTML = " FAIL😢"
+        }else if(num.value>39 && num.value<=49){
+            disp.innerHTML = "AVERAGE😒"
+        }else if(num.value>=50 && num.value<=69){
+            disp.innerHTML = "GOOD😊"
+        }else if(num.value>=70 && num.value<=100){
+            disp.innerHTML = "EXCELLENT😎"
+        }else if (num.value < 0 || num.value >= 101){
+            disp.innerHTML = "INVALID!"
+        }
+        else {
+            disp.innerHTML = "INVALID!"
+        }
+
+        }
+       
+    </script>
+</body>
+</html>
